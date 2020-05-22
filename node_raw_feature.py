@@ -61,9 +61,9 @@ if __name__ == '__main__':
 
     network_path = 'sanfrancisco/sanfrancisco.network'
 
-    tag_path = 'sanfrancisco/sanfrancisco_nodes_with_crossing_increament_stop.tag'
+    tag_path = 'sanfrancisco/node/sanfrancisco_nodes_with_crossing_increament_stop.tag'
 
-    type_path = 'sanfrancisco/node_type.sanfrancisco'
+    type_path = 'sanfrancisco/node/node_type.sanfrancisco'
 
     nodes = get_network_nodes(network_path)
 
@@ -73,5 +73,5 @@ if __name__ == '__main__':
 
     raw_feature_emb = gen_raw_feature_vec(nodes, nodes_tag, nodes_type)
 
-    emb_file_path = 'sanfrancisco/sanfrancisco_raw_feature_crossing.embeddings'
+    emb_file_path = 'sanfrancisco/node/sanfrancisco_raw_feature_crossing.embeddings'
     print_raw_feat_emb(raw_feature_emb, emb_file_path)
