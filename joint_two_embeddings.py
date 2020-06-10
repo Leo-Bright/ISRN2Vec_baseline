@@ -54,7 +54,7 @@ def joint_embs(src_emb_file_path, targ_emb_file_path, output_emb_path, method):
 
 if __name__ == '__main__':
 
-    joint_embs(src_emb_file_path='sanfrancisco/node/sf_node2vec_128',
-               targ_emb_file_path='sanfrancisco/node/sanfrancisco_combined_pca_traffic_4d.embeddings',
-               output_emb_path='sanfrancisco/node/sanfrancisco_pca_4d_and_node2vec_128d_traffic.embeddings',
+    joint_embs(src_emb_file_path='sanfrancisco/segment/sf_gcn_raw_feature_segment_blvd_16d.embedding',
+               targ_emb_file_path='sanfrancisco/segment/sf_raw_feature_segment_tiger_without_avenue.embeddings',
+               output_emb_path='sanfrancisco/segment/sf_gcn_segment_target_is_blvd_16d_concat_raw_feature_without_avenue.embedding',
                method='&')
